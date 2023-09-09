@@ -1,0 +1,16 @@
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\controllers\RoleController.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\dto\requests\UserRequestDto.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\config\UserInfoUserDetails.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\controllers\UserController.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\config\UserInfoUserDetailsService.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\dto\responses\RoleResponseDto.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\repositories\UserRepository.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\LibrarymanagmentApplication.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\services\RoleService.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\dto\responses\UserResponseDto.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\repositories\RoleRepository.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\entity\Roles.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\config\SecurityConfiguration.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\entity\User.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\dto\requests\RoleRequestDto.java
+C:\Users\DELL\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\library\src\main\java\com\example\librarymanagment\services\UserService.java
