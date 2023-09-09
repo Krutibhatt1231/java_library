@@ -10,21 +10,9 @@ public class UserRequestDto {
 	String address;
 	String phoneNumber;
 	String password;
-	boolean isEnabled;
-	private Set<RoleRequestDto> roles;
-	public UserRequestDto(Long id, String firstName, String lastName, String userName, String address, String phoneNumber,
-			String password, boolean isEnabled,Set<RoleRequestDto> roles) {
-		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.userName = userName;
-		this.address = address;
-		this.phoneNumber = phoneNumber;
-		this.password = password;
-		this.isEnabled = isEnabled;
-		this.roles = roles;
-	}
+	Boolean isEnabled; 
+	//private Set<RoleRequestDto> roles;
+
 	public Long getId() {
 		return id;
 	}
@@ -73,15 +61,15 @@ public class UserRequestDto {
 	public void setEnabled(boolean isEnabled) {
 		this.isEnabled = isEnabled;
 	}
-	public Set<RoleRequestDto> getRoles() {
-		return roles;
-	}
-	public void setRoles(Set<RoleRequestDto> roles) {
-		this.roles = roles;
-	}
-	  public void addRole(RoleRequestDto role) {
-	        this.roles.add(role);
-	
-	  }	
+//	public Set<RoleRequestDto> getRoles() {
+//		return roles;
+//	}
+//	public void setRoles(Set<RoleRequestDto> roles) {
+//		this.roles = roles;
+//	}
+//	  public void addRole(RoleRequestDto role) {
+//	        this.roles.add(role);
+//	
+//	  }	
 
 }

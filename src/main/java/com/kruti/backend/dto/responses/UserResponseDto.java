@@ -12,21 +12,26 @@ public class UserResponseDto {
 	String address;
 	String phoneNumber;
 	String password;
+	String status;
 	boolean isEnabled;
 	private Set<Roles> roles ;
 
-	public UserResponseDto(Long id, String firstName, String lastName, String userName, String address, String phoneNumber,
-			String password, boolean isEnabled, Set<Roles> roles) {
-		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.userName = userName;
-		this.address = address;
-		this.phoneNumber = phoneNumber;
-		this.password = password;
-		this.isEnabled = isEnabled;
-		this.roles = roles;
+//	public UserResponseDto(Long id, String firstName, String lastName, String userName, String address, String phoneNumber,
+//			String password, boolean isEnabled, Set<Roles> roles) {
+//		super();
+//		this.id = id;
+//		this.firstName = firstName;
+//		this.lastName = lastName;
+//		this.userName = userName;
+//		this.address = address;
+//		this.phoneNumber = phoneNumber;
+//		this.password = password;
+//		this.isEnabled = isEnabled;
+//		this.roles = roles;
+//	}
+
+	public UserResponseDto() {
+		// TODO Auto-generated constructor stub
 	}
 
 	public Long getId() {
@@ -100,5 +105,14 @@ public class UserResponseDto {
 	public void setRoles(Set<Roles> roles) {
 		this.roles = roles;
 	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
 
 }
