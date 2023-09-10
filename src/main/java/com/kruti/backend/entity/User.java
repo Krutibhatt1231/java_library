@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.hibernate.cache.spi.support.AbstractReadWriteAccess.Item;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -42,13 +44,13 @@ public class User {
 
 	@Column(name = "phone_number")
 	private String phoneNumber;
-	
+
 	@Column(name = "enabled")
 	private Boolean isEnabled;
-	
-	@ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
-	@JoinTable(name = "users_roles",joinColumns = @JoinColumn(name ="user_id"),inverseJoinColumns = @JoinColumn(name ="role_id"))
-private Set<Roles> roles= new HashSet<>() ;
+
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
+	@JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+	private Set<Roles> roles = new HashSet<>();
 
 	public Long getId() {
 		return id;
@@ -121,8 +123,9 @@ private Set<Roles> roles= new HashSet<>() ;
 	public void setRoles(Set<Roles> roles) {
 		this.roles = roles;
 	}
-	  public void addRole(Roles role) {
-	        this.roles.add(role);
-	
-	  }
+
+	public void addRole(Roles role) {
+		this.roles.add(role);
+
+	}
 }
